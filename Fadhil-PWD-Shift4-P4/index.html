@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Tombol Back to Top</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header halaman -->
+    <header id="top">
+        <h1>Website Latihan Pertemuan ke 4</h1>
+        <p>Ini Header Web</p>
+    </header>
+
+    <!-- Navigasi -->
+    <nav>
+        <a href="#top">Home</a>
+        <a href="#konten">Konten</a>
+        <a href="#footer">Footer</a>
+    </nav>
+
+    <!-- Konten utama -->
+    <main id="konten">
+        <section>
+            <h2>Selamat Datang</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa doloremque quisquam, vel molestias minima ut impedit id recusandae dicta nisi architecto saepe neque. Numquam velit hic itaque amet. Ipsam, optio!
+                Ut, perferendis. Natus et ab architecto saepe consectetur quos repellendus nisi cumque placeat eum. Exercitationem, tempore quae aperiam perspiciatis eaque repellat necessitatibus fugit quidem sed laboriosam eum voluptatem soluta eius?
+                Doloribus esse ipsam suscipit laboriosam dolore sit excepturi iusto velit eligendi exercitationem, ad nostrum nobis ratione debitis sed quis minus distinctio est ipsa doloremque tenetur itaque repudiandae officiis nulla. Cupiditate.
+            </p>
+        </section>
+
+        <section>
+            <h2>Artikel Fadhil</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius est autem qui rem voluptatum harum atque amet voluptatem cum velit. Ipsam corporis ratione sequi expedita, fugit architecto at quia reprehenderit?
+                Vel quos delectus voluptate commodi eligendi est cumque, ab mollitia totam aliquam id, officiis eveniet dignissimos soluta odit ea blanditiis neque quae porro, eos asperiores amet. Id voluptates ut debitis?
+                Voluptatibus repellendus maxime nesciunt aut repudiandae minima assumenda, eum autem molestiae at quibusdam minus iure voluptate exercitationem perspiciatis, labore eos animi distinctio nisi voluptatem blanditiis, ipsam illo quidem magni. Id.
+            </p>
+        </section>
+
+        <section>
+            <h2>Cerita A</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem est reprehenderit praesentium nam, qui eum fugiat fuga eveniet libero aperiam vitae, nihil ipsa molestias, optio pariatur quam a commodi obcaecati!
+                Doloremque nostrum necessitatibus non maxime neque quo veritatis, delectus deserunt, cupiditate ab dolorem porro suscipit recusandae rerum repudiandae quia aperiam illo eveniet consequuntur dolor libero sint aliquid facilis. Cupiditate, dolorum!
+                Obcaecati, quibusdam magnam voluptatibus consequuntur totam pariatur et, reiciendis fugit temporibus inventore, facere suscipit non. In illo rem quidem mollitia quam assumenda ipsum perferendis ipsam illum id, repellendus aliquam aperiam?
+                Autem aspernatur ea rerum rem ab. Doloremque esse recusandae itaque autem dolorem id animi officiis totam? Corporis, assumenda nisi tenetur voluptatum incidunt qui odio eum rerum optio minus harum quia.
+                Nam doloribus earum ipsam nobis possimus quasi adipisci explicabo rem accusamus reiciendis. Nam iure hic modi autem omnis aspernatur ab harum veniam incidunt officiis sint assumenda error, dolorem aperiam. Ut.
+            </p>
+        </section>
+
+        <section>
+            <h2>Cerita B</h2>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga hic eum, accusamus fugiat laudantium aliquam architecto amet incidunt quasi debitis, labore dolorum id eveniet officiis tenetur ab deleniti nobis blanditiis.
+                Perspiciatis vitae quis cumque asperiores nam? Ducimus dolorem vitae nisi quo animi doloribus praesentium nemo maxime vero eius vel, quod, esse, error illum eum id magni consequatur quasi obcaecati alias?
+                Eum, sapiente odit facilis totam esse sed sit vitae harum magni alias, quia non recusandae. A dolor et tenetur mollitia reiciendis temporibus doloremque, ipsa repudiandae ut cupiditate aspernatur assumenda sint!
+                Dignissimos voluptate necessitatibus perferendis, eum cumque nemo voluptates quidem qui optio odio enim quam sequi dolorum molestias similique tempore praesentium et architecto repellat tenetur ducimus sapiente expedita fugiat maxime? Aliquam?
+                Obcaecati quisquam aperiam culpa omnis sunt commodi harum quas fugiat sequi, ut, ad assumenda? Unde obcaecati pariatur vero autem excepturi? Voluptates debitis ut magni quis dolore similique tempora, blanditiis repudiandae?
+                Harum officiis doloremque fugiat accusamus id enim minus quam molestiae, deserunt numquam provident doloribus asperiores vel repudiandae fugit error soluta ipsum eos tenetur. Aut laudantium quos minus fugit omnis molestiae?
+            </p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <p>Ini Footer Web</p>
+    </footer>
+   
+    <!-- Tombol kembali ke atas -->
+    <button id="backToTop" title="Kembali ke atas">
+        &#8593;
+    </button>
+
+    <script>
+        const tombol = document.getElementById("backToTop");
+
+        // Menampilkan tombol jika scroll lebih dari 500px
+        window.addEventListener("scroll", function () {
+            if (window.scrollY > 500) {
+                tombol.classList.add("show");
+            } else {
+                tombol.classList.remove("show");
+            }
+        });
+
+        // Kembali ke bagian paling atas
+        tombol.addEventListener("click", function () {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+    </script>
+
+</body>
+</html>
